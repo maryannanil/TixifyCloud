@@ -14,8 +14,7 @@ idna==3.10
 itsdangerous==2.2.0
 Jinja2==3.1.5
 MarkupSafe==3.0.2
-mysql-connector-python @ file:///C:/Users/a878834/Downloads/mysql_connector_python-9.2.0-py2.py3-none-any.whl#sha256=d007c05a48fc076e5ac7ad3d76e332fa5b0e885853c2da80071ade2d6e01aba5
-mysqlclient==2.2.7
+mysql-connector-python
 pydantic==2.10.6
 pydantic_core==2.27.2
 PyMySQL==1.1.1
