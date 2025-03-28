@@ -12,10 +12,13 @@ document.getElementById('verification-form').addEventListener('submit', async fu
     }
 
     // ✅ FETCH call to Flask backend
-    const response = await fetch('http://127.0.0.1:8000/validate_ticket', {  // ✅ Only the endpoint
-        method: 'POST',
-        body: formData
+    const BACKEND_URL = process.env.BACKEND_URL || 'http://52.72.174.66:8000';
+    const response = await fetch(`${BACKEND_URL}/validate_ticket`, {  
+    method: 'POST',
+    body: formData
     });
+
+    
 
     const data = await response.json();
     document.getElementById('result').innerHTML = data.message;
